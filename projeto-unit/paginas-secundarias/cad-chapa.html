@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilo.css">
+    <title>Cadastrar chapa</title>
+</head>
+
+<body>
+    <main id="menuCadastro">
+        <h1>Cadastre sua chapa</h1>
+        <h2>Dados da chapa</h2>
+        <form name="cadastroChapa" action="../scripts/armazenamento.php" method="post">
+            <p>
+                <label for="nc">Nome da Chapa</label>
+                <input type="text" name="nomeChapa" id="nc" required maxlength="22" placeholder="Exemplo.. Ação Já!"
+                    max="5">
+            </p>
+            <p>
+                <label for="cc">Código da Chapa</label>
+                <input type="number" name="codChapa" id="cc" required minlength="2" maxlength="5"
+                    placeholder="Exemplo.. 12345">
+            </p>
+            <hr>
+            <h2>Dados dos lideres de chapa</h2>
+            <p>
+                <label for="nl">Nome do lider</label>
+                <input type="text" name="nomeLider" id="nl" required maxlength="22" minlength="5"
+                    placeholder="Digite seu nome completo">
+            </p>
+            <p>
+                <label for="cl">Matricula do lider</label>
+                <input type="number" name="codLider" id="cl" required placeholder="Exemplo.. 12345" minlength="2"
+                    maxlength="5">
+            </p>
+            <br>
+            <p>
+                <label for="nvl">Nome do vice-lider</label>
+                <input type="text" name="nomeV_Lider" id="nvl" required maxlength="22" minlength="5"
+                    placeholder="Digite seu nome completo">
+            </p>
+            <p>
+                <label for="cvl">Matricula do vice-lider</label>
+                <input type="number" name="codV_Lider" id="cvl" required placeholder="Exemplo.. 12345" minlength="2"
+                    maxlength="5">
+            </p>
+            <button class="botoes">
+                <p><a href="../index.php">Voltar</a></p>
+            </button>
+            <input type="reset" value="Limpar" class="botoes">
+            <input type="submit" value="Cadastrar" class="botoes">
+        </form>
+    </main>
+</body>
+
+</html>

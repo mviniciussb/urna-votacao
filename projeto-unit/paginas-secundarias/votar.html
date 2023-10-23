@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area de votação</title>
+    <link rel="stylesheet" href="../estilos/estilo.css">
+</head>
+
+<body>
+    <main id="menuVoto">
+
+        <h1>Votar</h1>
+        <form name="votacao" action="../scripts/verificacaoAluno.php" method="post">
+            <p><label for="codA">Matricula</label>
+                <input type="number" name="matAluno" id="matA" required placeholder="Digite a sua matricula">
+            </p>
+            <BUTTon class="botoes"><a href="../index.php">Voltar</a></BUTTon>
+            <input type="reset" value="Limpar" class="botoes">
+            <input type="submit" value="Votar" class="botoes">
+
+
+        </form>
+    </main>
+</body>
+
+</html>
